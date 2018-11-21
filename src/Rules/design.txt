@@ -20,19 +20,28 @@ schedule_class()
 
 // example :
 CREATE ROOM {
-	(36C,50,[ac,projector])
-	(36B,51,[projector])
-	(10B,20,[])
-	(5C,100,[ac,projector,computer,layar lebar])
-	(lab2b,50,[computer,ac])
+	(R7601,75,[papan tulis,ac])
+	(R7602,75,[proyektor,ac])
+	(R7604,30,[papan tulis])
+	(R7610,50,[proyektor,komputer])
+	(Multimedia1,50,[papan tulis,ac])
 }
 
 CREATE LECTURER {
-	(1234,yeni,[senin (7-8,15-18),selasa (1-10)])
+	(111,Putri,[senin (11-13)])
+	(112,Masayu,[senin (13-15),selasa (9-10)])
+	(113,Windy,[selasa (8-9),rabu (15-17)])
+	(114,Dicky,[kamis (11-13)])
+	(116,Bayu,[selasa (10-12)])
+	(117,Catur,[senin (17-18),kamis (9-11)])
 }
 
 CREATE COURSE {
-	(IF4091,ta,75,[projector],2,111)
+    (IF4091,ta,75,[proyektor,ac],2,111)
+    (IF4071,ml,50,[proyektor,komputer],3,112)
+    (IF4031,pat,40,[komputer],3,117)
+    (IF4043,sil,30,[papan tulis],3,113)
+    (IF4150,rplsd,50,[papan tulis,ac],2,116)
+    (IF4090,kp,75,[ac],2,114)
 }
-
 
