@@ -1,17 +1,19 @@
-grammar schedulingRules;
+grammar ClassScheduling;
 
-// Class
-createClass : 'CREATE CLASS {' (ENTER WHITESPACE class ENTER?)+ '}';
-class : '('courseID','courseName','capacity','facilities','lecturerID')';
+main: (command ENTER?)+;
+command: createRoom | createLecturer | createCourse;
+
+// Course
+createCourse : 'CREATE COURSE {' (ENTER WHITESPACE course ENTER?)+ '}';
+course : '('courseID','courseName','capacity','facilities','lecturerID')';
 courseID : ALPHANUMERIC;
 courseName : WORD;
 lecturerID: NUMERIC;
-lecturerName: WORD;
 
 // Lecturer
 createLecturer : 'CREATE LECTURER {' (ENTER WHITESPACE lecturer ENTER?)+ '}';
-lecturer : '('lecturerID','lecturerName','availability','preference')';
-availability : '[' (daytime)? ((',' daytime)*)?  ']';
+lecturer : '('lecturerID','lecturerName','preference')';
+lecturerName: WORD;
 preference : '[' (daytime)? ((',' daytime)*)?  ']';
 daytime : day WHITESPACE times;
 day : WORD;

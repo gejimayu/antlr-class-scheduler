@@ -1,0 +1,17 @@
+CREATE ROOM {
+	(36C,50,[ac,projector])
+	(36B,51,[projector])
+	(10B,20,[])
+	(5C,100,[ac,projector,computer,layar lebar])
+	(lab2b,50,[computer,ac])
+}
+
+CREATE LECTURER {
+	(1234,yeni,[senin (7-8,15-18),selasa (1-10)])
+}
+
+CREATE COURSE {
+	(IF6969,ai,100,[projector],1234)
+	(IF2320,tbfo,150,[],1245)
+	(IF4150,rplsd,50,[computer],1111)
+}
