@@ -8,6 +8,22 @@ courseName : WORD;
 lecturerID: NUMERIC;
 lecturerName: WORD;
 
+// Lecturer
+createLecturer : 'CREATE LECTURER {' (ENTER WHITESPACE lecturer ENTER?)+ '}';
+lecturer : '('lecturerID','lecturerName','availability','preference')';
+availability : '[' (daytime)? ((',' daytime)*)?  ']';
+preference : '[' (daytime)? ((',' daytime)*)?  ']';
+daytime : day WHITESPACE times;
+day : WORD;
+times : '(' (time)? ((',' time)*)? ')';
+time : from '-' to;
+from : NUMERIC | DIGIT;
+to : NUMERIC | DIGIT;
+
+// Room
+createRoom : 'CREATE ROOM {' (ENTER WHITESPACE room ENTER?)+ '}';
+room : '('roomID','capacity','facilities')';
+roomID : ALPHANUMERIC;
 facilities : '['(facility)? ((',' facility)*)?']';
 facility: WORD (WHITESPACE WORD)*;
 capacity : NUMERIC;
