@@ -1,0 +1,23 @@
+CREATE ROOM {
+	(36B,51,[projector])
+	(10B,20,[])
+	(5C,100,[ac,projector,computer,layar lebar])
+}
+
+CREATE LECTURER {
+	(111,Putri,[senin (11-13)])
+	(112,Masayu,[senin (13-15),selasa (9-10)])
+	(113,Windy,[selasa (9-10),rabu (15-17)])
+	(114,Dicky,[kamis (11-13)])
+	(116,Bayu,[selasa (10-12)])
+	(117,Catur,[senin (17-18),kamis (9-11)])
+}
+
+CREATE COURSE {
+    (IF4091,ta,75,[projector],2,111)
+    (IF4071,ml,50,[ac],3,112)
+    (IF4031,pat,40,[],3,117)
+    (IF4043,sil,30,[computer],3,113)
+    (IF4150,rplsd,50,[projector],2,116)
+    (IF4090,kp,75,[],2,114)
+}
