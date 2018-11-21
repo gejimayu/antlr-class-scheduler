@@ -11,7 +11,10 @@ CREATE LECTURER {
 }
 
 CREATE COURSE {
-	(IF6969,ai,100,[projector],1234)
-	(IF2320,tbfo,150,[],1245)
-	(IF4150,rplsd,50,[computer],1111)
+    (IF4091,ta,75,[projector],2,111)
+    (IF4071,ml,50,[ac],2,112)
+    (IF4031,pat,40,[],2,113)
+    (IF4091,sil,30,[computer],2,114)
+    (IF4091,rplsd,50,[projector],2,111)
+    (IF4091,kp,75,[],2,111)
 }

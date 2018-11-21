@@ -1,4 +1,5 @@
-// Generated from D:/Project/tesgrammarantlr\ClassScheduling.g4 by ANTLR 4.7
+// Generated from /Users/eshael/Downloads/antlr-class-scheduler/src/Rules/ClassScheduling.g4 by ANTLR 4.7
+package Rules;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -67,6 +68,16 @@ public interface ClassSchedulingListener extends ParseTreeListener {
 	 */
 	void exitCourseName(ClassSchedulingParser.CourseNameContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link ClassSchedulingParser#courseDuration}.
+	 * @param ctx the parse tree
+	 */
+	void enterCourseDuration(ClassSchedulingParser.CourseDurationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ClassSchedulingParser#courseDuration}.
+	 * @param ctx the parse tree
+	 */
+	void exitCourseDuration(ClassSchedulingParser.CourseDurationContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link ClassSchedulingParser#lecturerID}.
 	 * @param ctx the parse tree
 	 */
@@ -76,16 +87,6 @@ public interface ClassSchedulingListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitLecturerID(ClassSchedulingParser.LecturerIDContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ClassSchedulingParser#lecturerName}.
-	 * @param ctx the parse tree
-	 */
-	void enterLecturerName(ClassSchedulingParser.LecturerNameContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ClassSchedulingParser#lecturerName}.
-	 * @param ctx the parse tree
-	 */
-	void exitLecturerName(ClassSchedulingParser.LecturerNameContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ClassSchedulingParser#createLecturer}.
 	 * @param ctx the parse tree
@@ -106,6 +107,16 @@ public interface ClassSchedulingListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitLecturer(ClassSchedulingParser.LecturerContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ClassSchedulingParser#lecturerName}.
+	 * @param ctx the parse tree
+	 */
+	void enterLecturerName(ClassSchedulingParser.LecturerNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ClassSchedulingParser#lecturerName}.
+	 * @param ctx the parse tree
+	 */
+	void exitLecturerName(ClassSchedulingParser.LecturerNameContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ClassSchedulingParser#preference}.
 	 * @param ctx the parse tree

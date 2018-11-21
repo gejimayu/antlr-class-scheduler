@@ -1,4 +1,6 @@
-import jdk.nashorn.internal.ir.Terminal;
+// import jdk.nashorn.internal.ir.Terminal;
+import Rules.ClassSchedulingBaseListener;
+import Rules.ClassSchedulingParser;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.ArrayList;
@@ -15,6 +17,7 @@ public class ClassSchedulingLoader extends ClassSchedulingBaseListener {
             String currentCourseID = ctx2.courseID().ALPHANUMERIC().getText();
             String currentCourseName = ctx2.courseName().WORD().getText();
             int currentCapacity = Integer.parseInt(ctx2.capacity().NUMERIC().getText());
+            int currentDuration = Integer.parseInt(ctx2.courseDuration().DIGIT().getText());
             String currentLecturerID = ctx2.lecturerID().NUMERIC().getText();
             ArrayList<String> currentFacilities = new ArrayList<String>();
             for(ClassSchedulingParser.FacilityContext ctx3 : ctx2.facilities().facility()) {
@@ -26,7 +29,7 @@ public class ClassSchedulingLoader extends ClassSchedulingBaseListener {
                 currentFacility = currentFacility.substring(0, currentFacility.length() - 1);
                 currentFacilities.add(currentFacility);
             }
-            Course currentCourse = new Course(currentCourseID, currentCourseName, currentCapacity, currentFacilities, currentLecturerID);
+            Course currentCourse = new Course(currentCourseID, currentCourseName, currentCapacity, currentFacilities, currentDuration, currentLecturerID);
             courses.add(currentCourse);
         }
     }

@@ -1,4 +1,5 @@
-// Generated from D:/Project/tesgrammarantlr\ClassScheduling.g4 by ANTLR 4.7
+// Generated from /Users/eshael/Downloads/antlr-class-scheduler/src/Rules/ClassScheduling.g4 by ANTLR 4.7
+package Rules;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -87,6 +88,18 @@ public class ClassSchedulingBaseListener implements ClassSchedulingListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterCourseDuration(ClassSchedulingParser.CourseDurationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCourseDuration(ClassSchedulingParser.CourseDurationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterLecturerID(ClassSchedulingParser.LecturerIDContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -94,18 +107,6 @@ public class ClassSchedulingBaseListener implements ClassSchedulingListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitLecturerID(ClassSchedulingParser.LecturerIDContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterLecturerName(ClassSchedulingParser.LecturerNameContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitLecturerName(ClassSchedulingParser.LecturerNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -130,6 +131,18 @@ public class ClassSchedulingBaseListener implements ClassSchedulingListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitLecturer(ClassSchedulingParser.LecturerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLecturerName(ClassSchedulingParser.LecturerNameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLecturerName(ClassSchedulingParser.LecturerNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

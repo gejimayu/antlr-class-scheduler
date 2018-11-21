@@ -1,4 +1,5 @@
-// Generated from D:/Project/tesgrammarantlr\ClassScheduling.g4 by ANTLR 4.7
+// Generated from /Users/eshael/Downloads/antlr-class-scheduler/src/Rules/ClassScheduling.g4 by ANTLR 4.7
+package Rules;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -58,14 +59,14 @@ public class ClassSchedulingBaseVisitor<T> extends AbstractParseTreeVisitor<T> i
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitLecturerID(ClassSchedulingParser.LecturerIDContext ctx) { return visitChildren(ctx); }
+	@Override public T visitCourseDuration(ClassSchedulingParser.CourseDurationContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitLecturerName(ClassSchedulingParser.LecturerNameContext ctx) { return visitChildren(ctx); }
+	@Override public T visitLecturerID(ClassSchedulingParser.LecturerIDContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -80,6 +81,13 @@ public class ClassSchedulingBaseVisitor<T> extends AbstractParseTreeVisitor<T> i
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitLecturer(ClassSchedulingParser.LecturerContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitLecturerName(ClassSchedulingParser.LecturerNameContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

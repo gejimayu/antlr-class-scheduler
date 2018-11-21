@@ -1,4 +1,5 @@
-// Generated from D:/Project/tesgrammarantlr\ClassScheduling.g4 by ANTLR 4.7
+// Generated from /Users/eshael/Downloads/antlr-class-scheduler/src/Rules/ClassScheduling.g4 by ANTLR 4.7
+package Rules;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -46,17 +47,17 @@ public interface ClassSchedulingVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitCourseName(ClassSchedulingParser.CourseNameContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link ClassSchedulingParser#courseDuration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCourseDuration(ClassSchedulingParser.CourseDurationContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link ClassSchedulingParser#lecturerID}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitLecturerID(ClassSchedulingParser.LecturerIDContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ClassSchedulingParser#lecturerName}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitLecturerName(ClassSchedulingParser.LecturerNameContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ClassSchedulingParser#createLecturer}.
 	 * @param ctx the parse tree
@@ -69,6 +70,12 @@ public interface ClassSchedulingVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitLecturer(ClassSchedulingParser.LecturerContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ClassSchedulingParser#lecturerName}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLecturerName(ClassSchedulingParser.LecturerNameContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ClassSchedulingParser#preference}.
 	 * @param ctx the parse tree

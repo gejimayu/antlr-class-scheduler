@@ -32,7 +32,8 @@ CREATE LECTURER {
 }
 
 CREATE COURSE {
-	(IF4091,ta,75,[projector],2,111)
+	(IF4091,ta,75,[projector],111)
+    (IF)
 }
 
 
