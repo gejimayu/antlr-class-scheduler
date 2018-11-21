@@ -1,7 +1,9 @@
 CREATE ROOM {
-	(36B,51,[projector])
-	(10B,20,[])
-	(5C,100,[ac,projector,computer,layar lebar])
+	(R7601,75,[papan tulis,ac])
+	(R7602,75,[proyektor,ac])
+	(R7604,30,[papan tulis])
+	(R7610,50,[proyektor,komputer])
+	(Multimedia1,50,[papan tulis,ac])
 }
 
 CREATE LECTURER {
@@ -14,10 +16,10 @@ CREATE LECTURER {
 }
 
 CREATE COURSE {
-    (IF4091,ta,75,[projector],2,111)
-    (IF4071,ml,50,[ac],3,112)
-    (IF4031,pat,40,[],3,117)
-    (IF4043,sil,30,[computer],3,113)
-    (IF4150,rplsd,50,[projector],2,116)
-    (IF4090,kp,75,[],2,114)
+    (IF4091,ta,75,[proyektor,ac],2,111)
+    (IF4071,ml,50,[proyektor,komputer],3,112)
+    (IF4031,pat,40,[komputer],3,117)
+    (IF4043,sil,30,[papan tulis],3,113)
+    (IF4150,rplsd,50,[papan tulis,ac],2,116)
+    (IF4090,kp,75,[ac],2,114)
 }
